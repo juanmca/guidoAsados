@@ -1,0 +1,988 @@
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Calistoga&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/johnny-torch');
+//imports
+
+@import "_mixins";
+@import "_bucle";
+
+//fonts
+
+$font1: "Mansalva", cursive;
+$font2: "Bebas Neue", cursive;
+$font3: "Open Sans", sans-serif;
+$font4:  "Calistoga", serif;
+$font5: 'Johnny Torch', sans-serif;
+$font6: 'Johnny Torch Italic', sans-serif;
+
+
+
+
+
+//dimensiones
+
+$size1: 15px;
+$size2: 30px;
+$size3: 40px;
+$size4: 50px;
+$font-size-h2: 2em;
+
+//alineacion h2 y p
+
+$center-align: center;
+
+// paleta colores
+
+$color1: #800000;
+$color2: red;
+$color3: black;
+$color4: white;
+$color5: rgb(251, 248, 248);
+$color6: #fafafa;
+$color7: #26a1e9;
+$color8: #f0ca1d;
+$color9: #ffb155;
+
+
+
+// background color global
+
+body {
+  background-color: $color6;
+}
+
+//globales
+
+h2 {
+  font-size: $size3;
+  font-family: $font3;
+  color: $color3;
+  text-align: $center-align;
+
+  @media (max-width: 400px) {
+    font-size: 1.6em;
+  }
+}
+
+h3 {
+  font-family: $font4;
+  font-size: $size3;
+  color: $color1;
+}
+
+p {
+  font-size: $size1;
+  font-family: $font3;
+  text-align: $center-align;
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  font-size: $size1;
+  font-family: $font3;
+  font-weight: BOLD !important;
+  text-decoration: none !important ;
+}
+
+ul a {
+  color: $color3 !important;
+}
+
+/* ----linea corta roja  separacion-- global---- */
+.linea {
+  border-bottom: 1px solid $color7;
+  margin: 20px auto;
+  width: 90px;
+  
+
+
+  @media(min-width: 150px) and (max-width: 600px) {
+    width: 50px;
+
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* /*barra de navegacion------INDEX Y SECCIONES--uso bootstrap-- */
+
+.navbar {
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+  border-bottom: 2px solid black;
+  
+
+  .navbar-brand img {
+    height: 150px;
+  
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    i {
+      color: black;
+      font-size: 30px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: black;
+      letter-spacing: 1px;
+      font-size: 20px;
+      margin-inline: 30px;
+    }
+  }
+}
+
+/* /  INDEX Section foto-titulo  img - h1 */
+
+.bg-image {
+  background-image: url(img/DSC09987.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  
+
+  
+
+    @media (max-width: 500px) {
+      font-size: 5rem;
+      text-align: center;
+      height: auto;
+      white-space: normal;
+      letter-spacing: 6px;
+      justify-content: left;
+    }
+  
+
+  @media (max-width: 767px) {
+    height: 300px;
+  }
+
+  @media (max-width: 575px) {
+    height: 200px;
+  }
+}
+
+.display-4 {
+  font-size: 5rem;
+  color: $color9;
+  font-family: $font4;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  position: relative;
+  top: 90%;
+  left: -30%;
+  text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
+
+  @media (min-width: 150px) and (max-width: 600px) {
+    font-size: 1.6rem;
+    text-align: center;
+    height: auto;
+    white-space: normal;
+    letter-spacing: 2px;
+    position: relative;
+    top: 115%;
+    left: -40%;
+  
+  } 
+}
+
+.asadoTitle{
+  font-size: 5rem;
+  color: $color9;
+  font-family: $font4;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  position: relative;
+  top: 40%;
+  left: 8%;
+  text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
+
+  @media(min-width: 150px) and (max-width: 600px) {
+    font-size: 1.6rem;
+    text-align: center;
+    height: auto;
+    white-space: normal;
+    letter-spacing: 2px;
+    position: relative;
+    top: 65%;
+    left: -20%;
+  }
+}
+
+
+
+
+
+
+/*  INDEX -section- quienesSomos ------------------ */
+
+.quienesSomos {
+  text-align: center;
+  background-size: cover;
+  
+
+  p {
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+    
+  }
+
+  p::first-letter {
+    font-size: 160%;
+    color: $color9;
+    font-weight: lighter;
+  
+  }
+  
+  
+
+  @media(min-width: 150px) and (max-width: 600px) {
+    h2 {
+      font-size: 20px;
+      
+    }
+
+    p{
+      font-size: 13px;
+    }
+   
+  }
+}
+
+
+
+/*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
+
+.contNe {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+
+  video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+.videoTitulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  
+  
+
+  h2 {
+    font-size: $size3;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    @media(min-width: 150px) and (max-width: 600px) {
+      font-size: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      top: 100%;
+    }
+  }
+}
+#parrafoQs {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(252, 252, 250);
+  font-size: 25px;
+  font-style: italic;
+  padding: 20px;
+
+  @media (min-width: 150px) and (max-width: 600px) {
+    font-size: 15px;
+  }
+}
+
+.contNe:hover {
+  filter: none;
+}
+
+/* Index - Reseñas */
+.reseñas {
+  padding: 50px 0;
+
+  .reseña {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+
+    h3 {
+      color: $color1;
+      font-size: 18px;
+      text-align: center;
+    }
+    p {
+      color: #888;
+      font-size: 14px;
+      font-style: italic;
+      padding: 10px;
+    }
+  }
+
+  .rating {
+    color: gold;
+    text-align: center;
+
+    i {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}
+
+/* ----------------------INICIO SECCIONES---------------------------------------------- */
+
+/* CONTACTO*/
+
+.tituloCont {
+  width: auto;
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.container-fluid {
+  p {
+    color: $color1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
+  i {
+    font-size: 16px;
+    color: #050404;
+  }
+
+  .nleftPhone {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nleftEmail {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -80px
+  }
+}
+
+form {
+  padding: 25px;
+  margin-top: 80px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+  height: 40px;
+  border: solid 1px grey;
+  margin-bottom: 2px;
+}
+
+form .form-control {
+  border: solid 1px grey;
+}
+
+button.btn-dark {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: $color1;
+  color: white;
+}
+
+/* ---------------SECCION EVENTOS----------- */
+
+.tituloEvent {
+  h2 {
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 50px;
+  }
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+  padding-top: 60px;
+  margin: 0 auto;
+
+  .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h4 {
+      height: 50px;
+      width: auto;
+      padding-top: 20px;
+      font-size: 25px;
+      color: black;
+      font-family: $font3;
+      font-weight: bold;
+      
+    }
+
+    p {
+      &::first-letter {
+        font-size: 125%;
+        color: black;
+        font-weight: bold;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 6px;
+}
+
+.circulo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+#acordeon1 {
+  padding-top: 20px;
+}
+
+.collapse {
+  li {
+    color: $color1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+/* ---------------SECCION NOSOTROS --------------- */
+
+.jumbotron {
+  background-image: url(img/5.png);
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: space;
+  background-attachment: fixed, scroll;
+  height: 500px;
+  width: 100%;
+  color: rgb(253, 253, 247);
+  border-radius: 0;
+  margin-bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin-top: 30px;
+    color: rgb(252, 252, 250) !important;
+    font-size: 25px;
+    font-style: italic;
+    padding: 20px;
+  }
+}
+
+.tituloQs {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  background-color: $color6;
+}
+.nleft {
+  height: 500px;
+  width: 100%;
+  background-image: url(img/6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  padding: 20px;
+  height: 100%;
+
+  p {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    
+  }
+  p::first-letter {
+    font-size: 160%;
+    color: $color9;
+    font-weight: bold;
+  }
+}
+
+/* ------------ SECCION GALERIA------------------ */
+
+.tituloGal {
+  h2 {
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  p {
+    padding-top: 13px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.galeria {
+  width: 100%;
+  height: auto;
+  background-color: $color6;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 200px);
+  grid-gap: 20px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.galeria :hover {
+  box-shadow: 0px 5px 10px 3px $color9;
+  border-radius: 6px;
+}
+
+/*-------------- FOOTER index y  todas las secciones-------- */
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: $font4;
+
+}
+
+.footer p {
+  margin-bottom: 20px;
+  font-family: $font3;
+  font-style: normal;
+}
+
+footer i {
+  color: rgb(244, 248, 246);
+  font-size: 30px;
+  letter-spacing: 30px;
+}
+
+footer h3{
+  color: white
+}
+
+/* -------------MEDIA QUERY EVENTOS------------ */
+
+@media only screen and (min-width: 500px) and (max-width: 777px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ----------------MEDIAS QUERY GALERIA---------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 945px) {
+  .nleft {
+    width: 100%;
+    height: auto;
+  }
+}
+/* -------------MEDIA QUERY NOSOTROS------------ */
+
+@media (min-width: 150px) and (max-width: 350px) {
+  .jumbotron p {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+/* -------------MEDIA QUERY CONTACTO------------ */
+
+@media (min-width: 577px) {
+  .nleftForm {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 30px;
+  }
+  .nrightForm {
+    width: 60%;
+    position: relative;
+    left: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .nleftForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+ 
+/* -------------MEDIA QUERY FOOTER------------ */
+@media (min-width: 300px) and (max-width: 576px) {
+  .footer h3 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: px;
+  border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  opacity: 1;
+}
+
+
+
+
+/* /* FAQ Section */
+/* .faq-section {
+  max-width: 800px;
+  max-height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.accordion-body {
+  font-size: 0.9rem;
+  text-align: left;
+} */ 
+
+.contact-info {
+  width: 25%;
+  font-size: 1.2rem;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info i {
+  margin-right: 8px;
+  color: #171616;
+}
+.contact-info a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.faq-section {
+  flex-grow: 1;
+}
+.accordion-button {
+  font-weight: bold;
+  background-color: #fff3cd;
+  border: none;
+}
+.accordion-button:hover {
+  background-color: $color9;
+  border-radius: 8px;
+}
+.accordion-body {
+  font-size: 1rem;
+  line-height: 3;
+  background-color: #fafafa;
+}
+.accordion-header  {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a0a0a;
+  
+  
+}
+
+
+
+
+
+/* Stili Footer */
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: $font4;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-family: $font3;
+  font-style: normal;
+  font-size: 14px;
+}
+
+footer i {
+  color: rgb(244, 248, 246);
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Media Query Footer */
+@media (max-width: 576px) {
+  .footer h3 {
+    font-size: 20px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f5f5f5;
+}
+
+
+
+/* FAQ Section */
+
+
+
+.contact-info {
+  max-width: 1000px;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+
+  h3{
+    font-size: 40px ;
+    padding: 15px;
+  }
+}
+
+
+.contact-info i {
+  margin-bottom: 20px;
+  color: #0897a4;
+}
+.contact-info a {
+  color: #0b0b0b;
+  text-decoration: none;
+}
+
+
+.faq-section {
+  
+  max-width: 1000px;
+  padding: 25px;
+  margin: 25px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+ 
+  
+ 
+}
+.accordion-button {
+  font-weight: bold;
+  background-color: #f7f6f3;
+  border: none;
+}
+.accordion-button:hover {
+  background-color: #f7f7f1;
+}
+.accordion-body {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.text-center {
+  font-family: $font4;
+  font-size: 40px;
+  
+}
+ .accordion-item {
+  margin-bottom: 30px;
+  
+ 
+
+  h2{
+    font-size: 15px;
+    color: $color1;
+  
+   
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    gap: 10px; /* Aggiunge spazio tra le sezioni */
+  }
+}

@@ -1,0 +1,24 @@
+// galeria
+
+$image-count: 6; //  número de imágenes
+
+@for $i from 1 through $image-count {
+  $image-name: #{"#{($i)}.png"};
+  .item#{$i} {
+    width: 100%;
+    background-color: white;
+    border: 5px solid white;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("img/#{$image-name}");
+    filter: grayscale(100%);
+    transition: all 0.9s;
+
+    &:hover {
+      transition: all 0.9s;
+      background-size: 120%;
+      filter: grayscale(10%);
+    }
+  }
+}

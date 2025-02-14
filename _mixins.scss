@@ -1,0 +1,29 @@
+//boton enlace global
+
+@mixin boton($size1: 17px) {
+  padding: 3px 20px;
+  border-radius: 10px;
+  font-size: $size1;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 40px;
+  font-weight: bold;
+  border-style: none;
+
+  @media only screen and (min-width: 250px) and (max-width: 450px) {
+    padding: 2px 15px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: rgb(35, 233, 223);
+    color: black;
+    text-decoration: none;
+  }
+}
+
+._boton {
+  @include boton;
+}
