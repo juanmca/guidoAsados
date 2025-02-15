@@ -106,7 +106,7 @@ ul a {
 
 
   @media(min-width: 150px) and (max-width: 600px) {
-    width: 50px;
+    width: 100px;
 
   }
 }
@@ -199,8 +199,8 @@ ul a {
     white-space: normal;
     letter-spacing: 2px;
     position: relative;
-    top: 115%;
-    left: -40%;
+    top: 95%;
+    left: -38%;
   
   } 
 }
@@ -238,6 +238,11 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
+
+  h2{
+
+    font-family: $font4;
+  }
   
 
   p {
@@ -437,6 +442,11 @@ button.btn-dark {
     margin-top: 100px;
     padding: 20px;
     font-size: 50px;
+    font-family: $font4;
+
+    @media (min-width: 150px) and (max-width: 600px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -469,6 +479,11 @@ button.btn-dark {
       color: black;
       font-family: $font3;
       font-weight: bold;
+
+      @media (min-width: 150px) and (max-width: 600px) {
+        font-size: 20px;
+        
+      }
       
     }
 
@@ -515,7 +530,7 @@ button.btn-dark {
 /* ---------------SECCION NOSOTROS --------------- */
 
 .jumbotron {
-  background-image: url(img/5.png);
+  background-image: url(img/6.png);
   background-color: white;
   background-size: cover;
   background-position: bottom;
@@ -538,6 +553,7 @@ button.btn-dark {
     font-size: 25px;
     font-style: italic;
     padding: 20px;
+    
   }
 }
 
@@ -546,6 +562,12 @@ button.btn-dark {
   color: white;
   margin: 0 auto;
   text-transform: uppercase;
+  font-family: $font4;
+
+  @media (min-width: 150px) and (max-width: 600px) {
+    font-size: 30px;
+  
+  }
 }
 
 .container-fluid {
@@ -554,7 +576,7 @@ button.btn-dark {
 .nleft {
   height: 500px;
   width: 100%;
-  background-image: url(img/6.png);
+  background-image: url(img/5.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -591,6 +613,7 @@ button.btn-dark {
     margin-top: 150px;
     padding: 20px;
     margin-top: 50px;
+    font-family: $font4;
   }
 
   p {
@@ -706,7 +729,7 @@ footer h3{
 }
 /* -------------MEDIA QUERY NOSOTROS------------ */
 
-@media (min-width: 150px) and (max-width: 350px) {
+@media (min-width: 150px) and (max-width: 600px) {
   .jumbotron p {
     font-size: 16px;
     line-height: 40px;
@@ -716,21 +739,6 @@ footer h3{
 
 /* -------------MEDIA QUERY CONTACTO------------ */
 
-@media (min-width: 577px) {
-  .nleftForm {
-    width: 40%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
-    left: 30px;
-  }
-  .nrightForm {
-    width: 60%;
-    position: relative;
-    left: 10px;
-  }
-}
 
 @media (min-width: 300px) and (max-width: 576px) {
   .nleftForm {
@@ -920,6 +928,11 @@ footer h3 {
   h3{
     font-size: 40px ;
     padding: 15px;
+
+    @media (min-width: 150px) and (max-width: 600px) {
+      font-size: 30px;
+      
+    }
   }
 }
 
@@ -960,12 +973,23 @@ footer h3 {
   line-height: 1;
   display: flex;
   justify-content: center;
- 
+  
+  
+  @media (min-width: 150px) and (max-width: 600px) {
+    font-size: 15px;
+    font-style: italic;
+    
+  }
 }
 
 .text-center {
   font-family: $font4;
   font-size: 40px;
+
+  @media (min-width: 150px) and (max-width: 600px) {
+    font-size: 30px;
+    
+  }
   
 }
  .accordion-item {
@@ -976,6 +1000,7 @@ footer h3 {
   h2{
     font-size: 15px;
     color: $color1;
+    
   
    
   }

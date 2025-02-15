@@ -182,7 +182,7 @@ ul a {
 }
 @media (min-width: 150px) and (max-width: 600px) {
   .linea {
-    width: 50px;
+    width: 100px;
   }
 }
 
@@ -264,8 +264,8 @@ ul a {
     white-space: normal;
     letter-spacing: 2px;
     position: relative;
-    top: 115%;
-    left: -40%;
+    top: 95%;
+    left: -38%;
   }
 }
 
@@ -297,6 +297,9 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
+}
+.quienesSomos h2 {
+  font-family: "Calistoga", serif;
 }
 .quienesSomos p {
   margin-bottom: 20px;
@@ -470,6 +473,12 @@ button.btn-dark {
   margin-top: 100px;
   padding: 20px;
   font-size: 50px;
+  font-family: "Calistoga", serif;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .tituloEvent h2 {
+    font-size: 30px;
+  }
 }
 
 .contenedor {
@@ -501,6 +510,11 @@ button.btn-dark {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .contenedor .foto h4 {
+    font-size: 20px;
+  }
 }
 .contenedor .foto p::first-letter {
   font-size: 125%;
@@ -539,7 +553,7 @@ button.btn-dark {
 
 /* ---------------SECCION NOSOTROS --------------- */
 .jumbotron {
-  background-image: url(img/5.png);
+  background-image: url(img/6.png);
   background-color: white;
   background-size: cover;
   background-position: bottom;
@@ -569,6 +583,12 @@ button.btn-dark {
   color: white;
   margin: 0 auto;
   text-transform: uppercase;
+  font-family: "Calistoga", serif;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .tituloQs {
+    font-size: 30px;
+  }
 }
 
 .container-fluid {
@@ -578,7 +598,7 @@ button.btn-dark {
 .nleft {
   height: 500px;
   width: 100%;
-  background-image: url(img/6.png);
+  background-image: url(img/5.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -611,6 +631,7 @@ button.btn-dark {
   margin-top: 150px;
   padding: 20px;
   margin-top: 50px;
+  font-family: "Calistoga", serif;
 }
 .tituloGal p {
   padding-top: 13px;
@@ -715,7 +736,7 @@ footer h3 {
   }
 }
 /* -------------MEDIA QUERY NOSOTROS------------ */
-@media (min-width: 150px) and (max-width: 350px) {
+@media (min-width: 150px) and (max-width: 600px) {
   .jumbotron p {
     font-size: 16px;
     line-height: 40px;
@@ -723,21 +744,6 @@ footer h3 {
   }
 }
 /* -------------MEDIA QUERY CONTACTO------------ */
-@media (min-width: 577px) {
-  .nleftForm {
-    width: 40%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
-    left: 30px;
-  }
-  .nrightForm {
-    width: 60%;
-    position: relative;
-    left: 10px;
-  }
-}
 @media (min-width: 300px) and (max-width: 576px) {
   .nleftForm {
     display: flex;
@@ -916,6 +922,11 @@ footer h3 {
   font-size: 40px;
   padding: 15px;
 }
+@media (min-width: 150px) and (max-width: 600px) {
+  .contact-info h3 {
+    font-size: 30px;
+  }
+}
 
 .contact-info i {
   margin-bottom: 20px;
@@ -952,10 +963,21 @@ footer h3 {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 150px) and (max-width: 600px) {
+  .accordion-body {
+    font-size: 15px;
+    font-style: italic;
+  }
+}
 
 .text-center {
   font-family: "Calistoga", serif;
   font-size: 40px;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .text-center {
+    font-size: 30px;
+  }
 }
 
 .accordion-item {
