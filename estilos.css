@@ -280,7 +280,7 @@ ul a {
   left: 8%;
   text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
 }
-@media (min-width: 150px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .asadoTitle {
     font-size: 1.6rem;
     text-align: center;
@@ -289,9 +289,9 @@ ul a {
     letter-spacing: 2px;
     position: relative;
     top: 65%;
-    left: -14%;
+    left: -5%;
   }
-  .display-4{
+  .display-4 {
     font-size: 1.6rem;
     text-align: center;
     height: auto;
@@ -301,6 +301,7 @@ ul a {
     top: 115%;
     left: -40%;
   }
+ 
 }
 
 /*  INDEX -section- quienesSomos ------------------ */
