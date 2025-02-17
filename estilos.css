@@ -346,18 +346,19 @@ ul a {
 }
 .videoTitulo h2 {
   font-size: 40px;
-  color: white;
+  color: rgb(12, 12, 12);
   text-align: center;
   margin: 0;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-family: "Calistoga", serif;
 }
 @media (min-width: 150px) and (max-width: 600px) {
   .videoTitulo h2 {
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     position: relative;
     top: 100%;
   }
@@ -370,6 +371,7 @@ ul a {
   font-size: 25px;
   font-style: italic;
   padding: 20px;
+  font-variation-settings: "wght" 500;
 }
 @media (min-width: 150px) and (max-width: 600px) {
   #parrafoQs {
@@ -396,10 +398,11 @@ ul a {
   text-align: center;
 }
 .reseñas .reseña p {
-  color: #888;
+  color: #090909;
   font-size: 14px;
   font-style: italic;
   padding: 10px;
+  font-weight: bold;
 }
 .reseñas .rating {
   color: gold;
@@ -556,7 +559,7 @@ button.btn-dark {
   background-image: url(img/6.png);
   background-color: white;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: space;
   background-attachment: fixed, scroll;
   height: 500px;
@@ -580,7 +583,7 @@ button.btn-dark {
 
 .tituloQs {
   background-color: black;
-  color: white;
+  color: #ffb155;
   margin: 0 auto;
   text-transform: uppercase;
   font-family: "Calistoga", serif;
@@ -596,12 +599,19 @@ button.btn-dark {
 }
 
 .nleft {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-image: url(img/5.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .nleft {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nright {
@@ -610,17 +620,19 @@ button.btn-dark {
   justify-content: center;
   align-items: center;
   line-height: 30px;
-  padding: 20px;
+  padding: 15px;
   height: 100%;
+  background-color: #f3f2e0;
 }
 .nright p {
   color: black;
   font-style: italic;
   font-weight: bold;
   font-size: 13px;
+  text-align: left;
 }
 .nright p::first-letter {
-  font-size: 160%;
+  font-size: 130%;
   color: #ffb155;
   font-weight: bold;
 }
