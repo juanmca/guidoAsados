@@ -14,6 +14,8 @@
   margin-bottom: 40px;
   font-weight: bold;
   border-style: none;
+  cursor: pointer;
+  transition: 0.5s;
 }
 @media only screen and (min-width: 250px) and (max-width: 450px) {
   ._boton {
@@ -622,6 +624,7 @@ button.btn-dark {
   line-height: 30px;
   padding: 15px;
   height: 100%;
+  width: 100%;
   background-color: #f3f2e0;
 }
 .nright p {
@@ -875,6 +878,13 @@ footer h3 {
   bottom: 0;
   left: 0;
 }
+@media (min-width: 150px) and (max-width: 600px) {
+  .footer {
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid white; /* Línea blanca debajo del footer */
+  }
+}
 
 .footer p {
   margin-bottom: 10px;
@@ -896,7 +906,7 @@ footer h3 {
 }
 
 /* Media Query Footer */
-@media (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px) {
   .footer h3 {
     font-size: 20px;
   }
@@ -1004,4 +1014,32 @@ footer h3 {
   .container {
     gap: 10px; /* Aggiunge spazio tra le sezioni */
   }
+}
+#whatsapp-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  padding: 20px;
+}
+
+#whatsapp-footer a {
+  color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+#whatsapp-footer a:hover {
+  background-color: rgb(68, 144, 68);
+  color: #000;
+  text-decoration: none;
 }/*# sourceMappingURL=estilos.css.map */
