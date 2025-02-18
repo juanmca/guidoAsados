@@ -1075,3 +1075,40 @@ footer h3 {
 
 
 }
+
+
+
+/* Contenedor del slideshow */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Imágenes del slideshow */
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Mostrar solo la imagen activa */
+.slideshow img.active {
+  opacity: 0.6; /* Ajusta la opacidad como prefieras */
+}
+
+/* Logo centrado */
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 200px; /* Ajusta el tamaño según tu logo */
+}
