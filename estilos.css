@@ -32,102 +32,102 @@
 
 .item1 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/1.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item1:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
 
 .item2 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/2.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item2:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
 
 .item3 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/3.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item3:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
 
 .item4 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/4.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item4:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
 
 .item5 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/5.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item5:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
 
 .item6 {
   width: 100%;
-  background-color: white;
-  border: 5px solid white;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("img/6.png");
   filter: grayscale(100%);
-  transition: all 0.9s;
+  transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item6:hover {
-  transition: all 0.9s;
   background-size: 120%;
   filter: grayscale(10%);
 }
@@ -149,7 +149,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Calistoga", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   color: #800000;
 }
@@ -165,25 +165,13 @@ p {
   }
 }
 
-a {
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: BOLD !important;
-  text-decoration: none !important;
-}
-
-ul a {
-  color: black !important;
-}
-
-/* ----linea corta roja  separacion-- global---- */
-.linea {
+a .linea {
   border-bottom: 1px solid #26a1e9;
   margin: 20px auto;
   width: 90px;
 }
 @media (min-width: 150px) and (max-width: 600px) {
-  .linea {
+  a .linea {
     width: 100px;
   }
 }
@@ -1022,20 +1010,20 @@ footer h3 {
   background-color: black;
   text-align: center;
   padding: 10px 0;
-  z-index: 1000;
+  z-index: "1000";
   padding: 20px;
 }
 
 #whatsapp-footer a {
   color: white;
-  border: 2px solid green;
+  border: 1px solid green;
   border-radius: 5px;
   padding: 10px 20px;
   display: inline-block;
   text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: background-color 0.5s ease;
+  font-size: 20px;
 }
 
 #whatsapp-footer a:hover {
@@ -1077,5 +1065,97 @@ footer h3 {
 }
 
 .logo {
-  width: 200px; /* Ajusta el tamaño según tu logo */
+  width: 400px; /* Ajusta el tamaño según tu logo */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+@media (max-width: 992px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #000;
+  padding-top: 60px;
+  transition: left 0.4s ease-in-out;
+  z-index: 1000;
+}
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+#mobile-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid white;
+}
+#mobile-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+#mobile-menu ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#mobile-menu.active {
+  left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.desktop-menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.desktop-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.desktop-menu ul li a:hover {
+  color: gray;
+}
+@media (max-width: 992px) {
+  .desktop-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=estilos.css.map */

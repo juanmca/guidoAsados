@@ -4,9 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Calistoga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Calistoga&display=swap");
 
-@import url('https://fonts.cdnfonts.com/css/johnny-torch');
+@import url("https://fonts.cdnfonts.com/css/johnny-torch");
 //imports
 
 @import "_mixins";
@@ -17,13 +17,9 @@
 $font1: "Mansalva", cursive;
 $font2: "Bebas Neue", cursive;
 $font3: "Open Sans", sans-serif;
-$font4:  "Calistoga", serif;
-$font5: 'Johnny Torch', sans-serif;
-$font6: 'Johnny Torch Italic', sans-serif;
-
-
-
-
+$font4: "Calistoga", serif;
+$font5: "Johnny Torch", sans-serif;
+$font6: "Johnny Torch Italic", sans-serif;
 
 //dimensiones
 
@@ -47,9 +43,7 @@ $color5: rgb(251, 248, 248);
 $color6: #fafafa;
 $color7: #26a1e9;
 $color8: #f0ca1d;
-$color9: #ffb155; 
-
-
+$color9: #ffb155;
 
 // background color global
 
@@ -71,7 +65,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font4;
+  font-family: $font3;
   font-size: $size3;
   color: $color1;
 }
@@ -86,7 +80,7 @@ p {
   }
 }
 
-a {
+a /* {
   font-size: $size1;
   font-family: $font3;
   font-weight: BOLD !important;
@@ -95,19 +89,16 @@ a {
 
 ul a {
   color: $color3 !important;
-}
+} */
 
 /* ----linea corta roja  separacion-- global---- */
 .linea {
   border-bottom: 1px solid $color7;
   margin: 20px auto;
   width: 90px;
-  
 
-
-  @media(min-width: 150px) and (max-width: 600px) {
+  @media (min-width: 150px) and (max-width: 600px) {
     width: 100px;
-
   }
 }
 
@@ -123,11 +114,9 @@ ul a {
   background-color: white;
   transition: background-color 0.3s ease-in-out;
   border-bottom: 2px solid black;
-  
 
   .navbar-brand img {
     height: 150px;
-  
   }
 
   .navbar-toggler {
@@ -158,19 +147,15 @@ ul a {
   height: 500px;
   width: 100%;
   border-bottom: 1px solid black;
-  
 
-  
-
-    @media (max-width: 500px) {
-      font-size: 5rem;
-      text-align: center;
-      height: auto;
-      white-space: normal;
-      letter-spacing: 6px;
-      justify-content: left;
-    }
-  
+  @media (max-width: 500px) {
+    font-size: 5rem;
+    text-align: center;
+    height: auto;
+    white-space: normal;
+    letter-spacing: 6px;
+    justify-content: left;
+  }
 
   @media (max-width: 767px) {
     height: 300px;
@@ -201,11 +186,10 @@ ul a {
     position: relative;
     top: 95%;
     left: -38%;
-  
-  } 
+  }
 }
 
-.asadoTitle{
+.asadoTitle {
   font-size: 5rem;
   color: $color9;
   font-family: $font4;
@@ -216,7 +200,7 @@ ul a {
   left: 8%;
   text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
 
-  @media(min-width: 150px) and (max-width: 600px) {
+  @media (min-width: 150px) and (max-width: 600px) {
     font-size: 1.6rem;
     text-align: center;
     height: auto;
@@ -228,54 +212,39 @@ ul a {
   }
 }
 
-
-
-
-
-
 /*  INDEX -section- quienesSomos ------------------ */
 
 .quienesSomos {
   text-align: center;
   background-size: cover;
 
-  h2{
-
+  h2 {
     font-family: $font4;
   }
-  
 
   p {
     margin-bottom: 20px;
     line-height: 30px;
     font-style: italic;
     font-weight: bold;
-    
   }
 
   p::first-letter {
     font-size: 160%;
     color: $color9;
     font-weight: lighter;
-  
   }
-  
-  
 
-  @media(min-width: 150px) and (max-width: 600px) {
+  @media (min-width: 150px) and (max-width: 600px) {
     h2 {
       font-size: 20px;
-      
     }
 
-    p{
+    p {
       font-size: 13px;
     }
-   
   }
 }
-
-
 
 /*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
 
@@ -299,8 +268,6 @@ ul a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  
-  
 
   h2 {
     font-size: $size3;
@@ -311,7 +278,7 @@ ul a {
     letter-spacing: 1.5px;
     font-family: $font4;
 
-    @media(min-width: 150px) and (max-width: 600px) {
+    @media (min-width: 150px) and (max-width: 600px) {
       font-size: 25px;
       text-align: center;
       text-transform: uppercase;
@@ -328,7 +295,7 @@ ul a {
   font-size: 25px;
   font-style: italic;
   padding: 20px;
-  font-variation-settings: 'wght' 500;
+  font-variation-settings: "wght" 500;
 
   @media (min-width: 150px) and (max-width: 600px) {
     font-size: 15px;
@@ -359,7 +326,6 @@ ul a {
       font-style: italic;
       padding: 10px;
       font-weight: bold;
-    
     }
   }
 
@@ -406,7 +372,7 @@ ul a {
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -80px
+    top: -80px;
   }
 }
 
@@ -486,9 +452,7 @@ button.btn-dark {
 
       @media (min-width: 150px) and (max-width: 600px) {
         font-size: 20px;
-        
       }
-      
     }
 
     p {
@@ -532,8 +496,6 @@ button.btn-dark {
   }
 }
 
-
-
 /* ---------------SECCION NOSOTROS --------------- */
 
 .jumbotron {
@@ -560,7 +522,6 @@ button.btn-dark {
     font-size: 25px;
     font-style: italic;
     padding: 20px;
-    
   }
 }
 
@@ -573,7 +534,6 @@ button.btn-dark {
 
   @media (min-width: 150px) and (max-width: 600px) {
     font-size: 30px;
-  
   }
 }
 
@@ -593,7 +553,6 @@ button.btn-dark {
     display: flex;
     flex-direction: column;
   }
-  
 }
 
 .nright {
@@ -604,9 +563,8 @@ button.btn-dark {
   line-height: 30px;
   padding: 15px;
   height: 100%;
-  width: 100%; ;
+  width: 100%;
   background-color: #f3f2e0;
-  
 
   p {
     color: black;
@@ -614,8 +572,6 @@ button.btn-dark {
     font-weight: bold;
     font-size: 13px;
     text-align: left;
-
-    
   }
   p::first-letter {
     font-size: 130%;
@@ -671,7 +627,6 @@ button.btn-dark {
   text-align: center;
   padding: 20px;
   font-family: $font4;
-
 }
 
 .footer p {
@@ -686,8 +641,8 @@ footer i {
   letter-spacing: 30px;
 }
 
-footer h3{
-  color: white
+footer h3 {
+  color: white;
 }
 
 /* -------------MEDIA QUERY EVENTOS------------ */
@@ -758,7 +713,6 @@ footer h3{
 
 /* -------------MEDIA QUERY CONTACTO------------ */
 
-
 @media (min-width: 300px) and (max-width: 576px) {
   .nleftForm {
     display: flex;
@@ -767,7 +721,7 @@ footer h3{
     margin-top: 40px;
   }
 }
- 
+
 /* -------------MEDIA QUERY FOOTER------------ */
 @media (min-width: 300px) and (max-width: 576px) {
   .footer h3 {
@@ -800,9 +754,6 @@ footer h3{
   opacity: 1;
 }
 
-
-
-
 /* /* FAQ Section */
 /* .faq-section {
   max-width: 800px;
@@ -821,7 +772,7 @@ footer h3{
 .accordion-body {
   font-size: 0.9rem;
   text-align: left;
-} */ 
+} */
 
 .contact-info {
   width: 25%;
@@ -859,17 +810,11 @@ footer h3{
   line-height: 3;
   background-color: #fafafa;
 }
-.accordion-header  {
+.accordion-header {
   font-size: 2rem;
   font-weight: bold;
   color: #0a0a0a;
-  
-  
 }
-
-
-
-
 
 /* Stili Footer */
 .footer {
@@ -883,15 +828,11 @@ footer h3{
   bottom: 0;
   left: 0;
 
-  @media 
-  (min-width: 150px) and (max-width: 600px) {
+  @media (min-width: 150px) and (max-width: 600px) {
     padding-bottom: 20px;
     margin-bottom: 60px;
     border-bottom: 2px solid white; /* Línea blanca debajo del footer */
-    
-
   }
-
 }
 
 .footer p {
@@ -923,7 +864,6 @@ footer h3 {
   }
 }
 
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -939,11 +879,7 @@ footer h3 {
   border: 3px solid #f5f5f5;
 }
 
-
-
 /* FAQ Section */
-
-
 
 .contact-info {
   max-width: 1000px;
@@ -955,17 +891,15 @@ footer h3 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
 
-  h3{
-    font-size: 40px ;
+  h3 {
+    font-size: 40px;
     padding: 15px;
 
     @media (min-width: 150px) and (max-width: 600px) {
       font-size: 30px;
-      
     }
   }
 }
-
 
 .contact-info i {
   margin-bottom: 20px;
@@ -976,19 +910,13 @@ footer h3 {
   text-decoration: none;
 }
 
-
 .faq-section {
-  
   max-width: 1000px;
   padding: 25px;
   margin: 25px;
   margin-bottom: 50px;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-
- 
-  
- 
 }
 .accordion-button {
   font-weight: bold;
@@ -1003,12 +931,10 @@ footer h3 {
   line-height: 1;
   display: flex;
   justify-content: center;
-  
-  
+
   @media (min-width: 150px) and (max-width: 600px) {
     font-size: 15px;
     font-style: italic;
-    
   }
 }
 
@@ -1018,21 +944,14 @@ footer h3 {
 
   @media (min-width: 150px) and (max-width: 600px) {
     font-size: 30px;
-    
   }
-  
 }
- .accordion-item {
+.accordion-item {
   margin-bottom: 30px;
-  
- 
 
-  h2{
+  h2 {
     font-size: 15px;
     color: $color1;
-    
-  
-   
   }
 }
 
@@ -1042,41 +961,35 @@ footer h3 {
   }
 }
 
-
 #whatsapp-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  
   background-color: black;
   text-align: center;
   padding: 10px 0;
-  z-index: 1000;
+  z-index: "1000";
   padding: 20px;
-  
 }
 
 #whatsapp-footer a {
   color: white;
-  border: 2px solid green;
+  border: 1px solid green;
   border-radius: 5px;
   padding: 10px 20px;
   display: inline-block;
   text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: $font3;
   transition: background-color 0.5s ease;
-  
+  font-size: 20px;
 }
 
 #whatsapp-footer a:hover {
   background-color: rgb(68, 144, 68);
   color: #000;
   text-decoration: none;
-
-
 }
-
-
 
 /* Contenedor del slideshow */
 .slideshow-container {
@@ -1110,5 +1023,135 @@ footer h3 {
 }
 
 .logo {
-  width: 200px; /* Ajusta el tamaño según tu logo */
+  width: 400px; /* Ajusta el tamaño según tu logo */
+}
+
+
+
+
+
+
+
+     
+   // Variables de colores
+$black: #000;
+$white: #fff;
+$gray: rgba(0, 0, 0, 0.8);
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Icono del menú hamburguesa (solo visible en móviles y tablets)
+.menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 30px;
+  color: $black;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; // Oculto por defecto
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
+// Menú lateral
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; // Fuera de la pantalla
+  width: 250px;
+  height: 100%;
+  background: $black;
+  padding-top: 60px;
+  transition: left 0.4s ease-in-out;
+  z-index: 1000;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    
+
+    li {
+      padding: 15px;
+      border-bottom: 1px solid white;
+      
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+        font-weight: bold;
+        font-family: $font3;
+        
+        
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+        
+        }
+      }
+    }
+  }
+}
+
+// Mostrar el menú cuando está activo
+#mobile-menu.active {
+  left: 0;
+}
+
+
+
+     // Variables de colores
+$black: #000;
+$white: #fff;
+$gray: rgba(0, 0, 0, 0.8);
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Menú de escritorio (visible en PC)
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  background:  white;
+  padding: 15px 0;
+  border-bottom: 1px solid $gray;
+
+
+  ul {
+    display: flex;
+   
+    gap: 40px;
+    list-style: none;
+    
+    li {
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    display: none; // Se oculta en móviles y tablets
+  }
 }

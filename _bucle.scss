@@ -6,17 +6,18 @@ $image-count: 6; //  número de imágenes
   $image-name: #{"#{($i)}.png"};
   .item#{$i} {
     width: 100%;
-    background-color: white;
-    border: 5px solid white;
+    height: 100%;
+    background-color: transparent;
+    border: none;
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("img/#{$image-name}");
     filter: grayscale(100%);
-    transition: all 0.9s;
+    transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;  
 
     &:hover {
-      transition: all 0.9s;
+    
       background-size: 120%;
       filter: grayscale(10%);
     }
