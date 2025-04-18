@@ -217,22 +217,48 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
+  
 
   h2 {
     font-family: $font4;
+    font-size: $size3;
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-variation-settings: "wght" 500;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
   }
 
   p {
     margin-bottom: 20px;
     line-height: 30px;
-    font-style: italic;
     font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    color: $color3;
+    font-style: italic;
+    font-variation-settings: "wght" 500;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 1em;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 80%;
+    
+    
   }
 
   p::first-letter {
     font-size: 160%;
     color: $color9;
-    font-weight: lighter;
+    font-weight: bold;
+
   }
 
   @media (min-width: 150px) and (max-width: 600px) {
@@ -277,6 +303,10 @@ ul a {
     font-weight: bold;
     letter-spacing: 1.5px;
     font-family: $font4;
+    text-transform: uppercase;
+    font-variation-settings: "wght" 500;
+
+
 
     @media (min-width: 150px) and (max-width: 600px) {
       font-size: 30px;
@@ -296,6 +326,7 @@ ul a {
   font-style: italic;
   padding: 20px;
   font-variation-settings: "wght" 500;
+ 
 
   @media (min-width: 150px) and (max-width: 600px) {
     font-size: 15px;
@@ -309,16 +340,28 @@ ul a {
 /* Index - Reseñas */
 .reseñas {
   padding: 50px 0;
-
+ 
   .reseña {
     margin-bottom: 20px;
     height: 100%;
     width: 100%;
 
+
     h3 {
       color: $color1;
       font-size: 18px;
       text-align: center;
+      font-family: $font4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-variation-settings: "wght" 500;
+
+      @media (min-width: 150px) and (max-width: 600px) {
+        font-size: 20px;
+      }
+     
     }
     p {
       color: #090909;
@@ -326,7 +369,20 @@ ul a {
       font-style: italic;
       padding: 10px;
       font-weight: bold;
+      text-align: center;
+      font-variation-settings: "wght" 500;
+      margin: 0 auto;
+      width: 80%;
+      line-height: 30px;
+      text-justify: inter-word;
+      text-indent: 1em;
+      letter-spacing: 1px;
+
+     
+
+
     }
+    
   }
 
   .rating {
@@ -338,6 +394,7 @@ ul a {
       text-align: center;
     }
   }
+ 
 }
 
 /* ----------------------INICIO SECCIONES---------------------------------------------- */
@@ -510,6 +567,13 @@ body.fondoImagen {
     font-weight: bold;
     font-size: 13px;
     text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    line-height: 30px;
+    font-variation-settings: "wght" 500;
+    text-justify: inter-word;
+    text-indent: 1em;
+    letter-spacing: 1px;
   }
   p::first-letter {
     font-size: 130%;
@@ -561,7 +625,6 @@ body.fondoImagen {
   height: auto;
   width: 100%;
   background-color: black;
-  color: white;
   text-align: center;
   padding: 20px;
   font-family: $font4;
@@ -571,6 +634,9 @@ body.fondoImagen {
   margin-bottom: 20px;
   font-family: $font3;
   font-style: normal;
+ 
+  
+  
 }
 
 footer i {
@@ -581,6 +647,13 @@ footer i {
 
 footer h3 {
   color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $font4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-variation-settings: "wght" 500;
+  text-align: center
 }
 
 /* -------------MEDIA QUERY EVENTOS------------ */
@@ -646,6 +719,17 @@ footer h3 {
     font-size: 16px;
     line-height: 40px;
     letter-spacing: 1px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    font-variation-settings: "wght" 500;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 1em;
+    color: $color9;
+
+
+
   }
 }
 
