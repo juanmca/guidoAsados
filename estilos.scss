@@ -279,7 +279,7 @@ ul a {
     font-family: $font4;
 
     @media (min-width: 150px) and (max-width: 600px) {
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1.5px;
@@ -436,7 +436,7 @@ body.fondoImagen {
 /* ---------------SECCION NOSOTROS --------------- */
 
 .jumbotron {
-  background-image: url(img/6.png);
+  background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -464,7 +464,7 @@ body.fondoImagen {
 
 .tituloQs {
   background-color: black;
-  color: $color9;
+  color: white;
   margin: 0 auto;
   text-transform: uppercase;
   font-family: $font4;
@@ -480,10 +480,11 @@ body.fondoImagen {
 .nleft {
   height: auto;
   width: 100%;
-  background-image: url(img/5.png);
+  background-image: url(img/19.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #f3f2e0 ;
 
   @media (min-width: 150px) and (max-width: 600px) {
     height: 300px;
@@ -928,7 +929,7 @@ footer h3 {
 }
 
 .logo {
-  width: 400px; /* Ajusta el tamaño según tu logo */
+  width: 300px; /* Ajusta el tamaño según tu logo */
 }
 
 // Variables de colores
