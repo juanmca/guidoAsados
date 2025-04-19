@@ -10,9 +10,8 @@ $image-count: 6; //  número de imágenes
   .item#{$i} {
     width: 100%;
     height: 100%;
-    border-radius: 50px;
     border: none;
-    background-size: 50%;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("img/#{$image-name}"), url("img/#{$image-name-jpg}");
@@ -21,7 +20,7 @@ $image-count: 6; //  número de imágenes
 
     &:hover {
     
-      background-size: 90%;
+      background-size: 120%;
       filter: grayscale(10%);
     }
   }
