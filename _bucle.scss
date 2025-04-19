@@ -11,7 +11,7 @@ $image-count: 6; //  número de imágenes
     width: 100%;
     height: 100%;
     border: none;
-    background-size: 60%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("img/#{$image-name}"), url("img/#{$image-name-jpg}");
@@ -20,7 +20,7 @@ $image-count: 6; //  número de imágenes
 
     &:hover {
     
-      background-size: 120%;
+      background-size: 140%;
       filter: grayscale(10%);
     }
   }
