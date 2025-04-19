@@ -475,7 +475,7 @@ a .linea {
 .contenedor .foto h4 {
   height: 50px;
   width: auto;
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 25px;
   color: black;
   font-family: "Open Sans", sans-serif;
@@ -489,16 +489,18 @@ a .linea {
 .contenedor .foto P {
   color: #800000;
   font-size: 15px;
+  padding: 1px;
+  padding-bottom: 30px;
   font-style: italic;
-  padding: 10px;
-  font-weight: bold;
   text-align: center;
   font-variation-settings: "wght" 500;
   margin: 0 auto;
   width: 80%;
-  line-height: 30px;
+  line-height: 20px;
   text-justify: inter-word;
   text-indent: 1em;
+  letter-spacing: 1px;
+  width: 80%;
 }
 .contenedor .foto P p::first-letter {
   font-size: 125%;
