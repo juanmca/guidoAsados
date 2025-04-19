@@ -1126,4 +1126,21 @@ footer h3 {
   .desktop-menu {
     display: none;
   }
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 90px; /* Ajustado para no tapar el WhatsApp */
+  right: 20px;
+  z-index: 100;
+  display: none;
+  background-color: white; /* Fondo blanco */
+  color: black; /* Flecha negra */
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Suave sombrita */
+  transition: opacity 0.3s, background-color 0.3s;
 }/*# sourceMappingURL=estilos.css.map */
