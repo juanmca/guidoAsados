@@ -93,7 +93,7 @@ ul a {
 
 /* ----linea corta roja  separacion-- global---- */
 .linea {
-  border-bottom: 1px solid $color7;
+  border-bottom: 1px solid red;
   margin: 20px auto;
   width: 90px;
 
@@ -219,32 +219,17 @@ ul a {
   background-size: cover;
   
 
-  h2 {
-    font-family: $font4;
-    font-size: $size3;
-    color: black;
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    font-variation-settings: "wght" 500;
-    text-transform: uppercase;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-
-  }
 
   p {
     margin-bottom: 20px;
     line-height: 30px;
     font-weight: bold;
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
     color: $color3;
     font-style: italic;
     font-variation-settings: "wght" 500;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
     text-indent: 1em;
     letter-spacing: 1px;
@@ -256,7 +241,7 @@ ul a {
 
   p::first-letter {
     font-size: 160%;
-    color: $color9;
+    color: black;
     font-weight: bold;
 
   }
@@ -301,10 +286,12 @@ ul a {
     text-align: center;
     margin: 0;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-family: $font4;
     text-transform: uppercase;
     font-variation-settings: "wght" 500;
+    line-height: 1.5;
+    text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
 
 
 
@@ -416,6 +403,7 @@ ul a {
     padding: 20px;
     font-size: 50px;
     font-family: $font4;
+    background-color: black;
 
     @media (min-width: 150px) and (max-width: 600px) {
       font-size: 30px;
@@ -461,6 +449,24 @@ ul a {
       }
     }
 
+P{
+      color:$color1;
+      font-size: 15px;
+      font-style: italic;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      font-variation-settings: "wght" 500;
+      margin: 0 auto;
+      width: 80%;
+      line-height: 30px;
+      text-justify: inter-word;
+      text-indent: 1em;
+    
+
+    
+
+
     p {
       &::first-letter {
         font-size: 125%;
@@ -471,7 +477,7 @@ ul a {
     }
   }
 }
-
+}
 body.fondoImagen {
   background: linear-gradient(to bottom, #f3f2e0, #eae7dc);
   background-size: cover;
@@ -515,7 +521,15 @@ body.fondoImagen {
     color: rgb(252, 252, 250) !important;
     font-size: 25px;
     font-style: italic;
+    font-weight: bold;
+    text-align: center;
     padding: 20px;
+    font-variation-settings: "wght" 500;
+    text-justify: inter-word;
+    text-indent: 1em;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 80%;
   }
 }
 
@@ -574,6 +588,9 @@ body.fondoImagen {
     text-justify: inter-word;
     text-indent: 1em;
     letter-spacing: 1px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
   }
   p::first-letter {
     font-size: 130%;
@@ -880,6 +897,11 @@ footer h3 {
     font-size: 40px;
     padding: 15px;
     font-family: $font4;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 
     @media (min-width: 150px) and (max-width: 600px) {
       font-size: 30px;

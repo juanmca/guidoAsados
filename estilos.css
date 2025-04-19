@@ -166,7 +166,7 @@ p {
 }
 
 a .linea {
-  border-bottom: 1px solid #26a1e9;
+  border-bottom: 1px solid red;
   margin: 20px auto;
   width: 90px;
 }
@@ -288,30 +288,16 @@ a .linea {
   text-align: center;
   background-size: cover;
 }
-.quienesSomos h2 {
-  font-family: "Calistoga", serif;
-  font-size: 40px;
-  color: black;
-  text-align: center;
-  margin: 0;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  font-variation-settings: "wght" 500;
-  text-transform: uppercase;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
 .quienesSomos p {
   margin-bottom: 20px;
   line-height: 30px;
   font-weight: bold;
   font-size: 20px;
-  padding: 15px;
+  padding: 10px;
   color: black;
   font-style: italic;
   font-variation-settings: "wght" 500;
-  text-align: justify;
+  text-align: center;
   text-justify: inter-word;
   text-indent: 1em;
   letter-spacing: 1px;
@@ -320,7 +306,7 @@ a .linea {
 }
 .quienesSomos p::first-letter {
   font-size: 160%;
-  color: #ffb155;
+  color: black;
   font-weight: bold;
 }
 @media (min-width: 150px) and (max-width: 600px) {
@@ -361,10 +347,12 @@ a .linea {
   text-align: center;
   margin: 0;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   font-family: "Calistoga", serif;
   text-transform: uppercase;
   font-variation-settings: "wght" 500;
+  line-height: 1.5;
+  text-shadow: 1px 3px 3px rgba(9, 10, 10, 0.994);
 }
 @media (min-width: 150px) and (max-width: 600px) {
   .videoTitulo h2 {
@@ -455,6 +443,7 @@ a .linea {
   padding: 20px;
   font-size: 50px;
   font-family: "Calistoga", serif;
+  background-color: black;
 }
 @media (min-width: 150px) and (max-width: 600px) {
   .tituloEvent h2 {
@@ -497,7 +486,21 @@ a .linea {
     font-size: 20px;
   }
 }
-.contenedor .foto p::first-letter {
+.contenedor .foto P {
+  color: #800000;
+  font-size: 15px;
+  font-style: italic;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-variation-settings: "wght" 500;
+  margin: 0 auto;
+  width: 80%;
+  line-height: 30px;
+  text-justify: inter-word;
+  text-indent: 1em;
+}
+.contenedor .foto P p::first-letter {
   font-size: 125%;
   color: black;
   font-weight: bold;
@@ -543,7 +546,15 @@ body.fondoImagen .foto img:hover {
   color: rgb(252, 252, 250) !important;
   font-size: 25px;
   font-style: italic;
+  font-weight: bold;
+  text-align: center;
   padding: 20px;
+  font-variation-settings: "wght" 500;
+  text-justify: inter-word;
+  text-indent: 1em;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .tituloQs {
@@ -604,6 +615,9 @@ body.fondoImagen .foto img:hover {
   text-justify: inter-word;
   text-indent: 1em;
   letter-spacing: 1px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
 }
 .nright p::first-letter {
   font-size: 130%;
@@ -883,6 +897,10 @@ footer h3 {
   font-size: 40px;
   padding: 15px;
   font-family: "Calistoga", serif;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 @media (min-width: 150px) and (max-width: 600px) {
   .contact-info h3 {
