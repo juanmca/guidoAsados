@@ -17,10 +17,11 @@ $image-count: 6; //  número de imágenes
     background-image: url("img/#{$image-name}"), url("img/#{$image-name-jpg}");
     filter: grayscale(100%);
     transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;  
+    
 
     &:hover {
     
-      background-size: 140%;
+      background-size: 130%;
       filter: grayscale(10%);
     }
   }

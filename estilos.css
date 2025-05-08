@@ -42,7 +42,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item1:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -58,7 +58,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item2:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -74,7 +74,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item3:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -90,7 +90,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item4:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -106,7 +106,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item5:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -122,7 +122,7 @@
   transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .item6:hover {
-  background-size: 140%;
+  background-size: 130%;
   filter: grayscale(10%);
 }
 
@@ -379,54 +379,142 @@ a .linea {
 }
 
 /* Index - Reseñas */
+/* Estilo general de la sección */
 .reseñas {
-  padding: 50px 0;
+  background-color: #f3f2e0;
+  padding: 3rem 0;
 }
-.reseñas .reseña {
-  margin-bottom: 20px;
-  height: 100%;
-  width: 100%;
+
+/* Contenedor de cada reseña */
+.reseña {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
 }
-.reseñas .reseña h3 {
-  color: #800000;
-  font-size: 18px;
+
+/* Estilo del nombre/título */
+.reseña h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #800000; /* Color rojo oscuro */
   text-align: center;
   font-family: "Calistoga", serif;
-  font-weight: bold;
-  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-variation-settings: "wght" 500;
+  font-variation-settings: "wght" 500; /* Grosor de la fuente */
+  margin-top: 0.5rem; /* Espacio superior */
+  margin-bottom: 0.5rem; /* Espacio inferior */
+  padding: 0.5rem; /* Espacio interno */
 }
-@media (min-width: 150px) and (max-width: 600px) {
-  .reseñas .reseña h3 {
-    font-size: 20px;
-  }
+
+/* Estrellas de valoración */
+.rating {
+  color: #f5c518; /* amarillo típico de estrellas */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
-.reseñas .reseña p {
-  color: #090909;
-  font-size: 14px;
-  font-style: italic;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-  font-variation-settings: "wght" 500;
-  margin: 0 auto;
-  width: 80%;
-  line-height: 30px;
+
+/* Párrafos dentro de la reseña */
+.reseña p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
   text-justify: inter-word;
   text-indent: 1em;
   letter-spacing: 1px;
-}
-.reseñas .rating {
-  color: gold;
-  text-align: center;
-}
-.reseñas .rating i {
-  font-size: 15px;
-  text-align: center;
+  color: #333333; /* Color del texto */
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0.5rem; /* Espacio interno */
+  margin: 0 auto; /* Centrar el párrafo */
+  width: 100%; /* Ancho del párrafo */
+  text-align: center; /* Alinear el texto al centro */
+  line-height: 30px; /* Espacio entre líneas */
 }
 
+/* Último párrafo sin margen inferior */
+.reseña p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive: mejora lectura en pantallas pequeñas */
+@media (max-width: 768px) {
+  .reseña {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+/* .reseñas {
+  padding: 50px 0;
+
+  .reseña {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+
+
+    h3 {
+      color: $color1;
+      font-size: 18px;
+      text-align: center;
+      font-family: $font4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-variation-settings: "wght" 500;
+
+      @media (min-width: 150px) and (max-width: 600px) {
+        font-size: 20px;
+      }
+
+    }
+    p {
+      color: #090909;
+      font-size: 14px;
+      font-style: italic;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      font-variation-settings: "wght" 500;
+      margin: 0 auto;
+      width: 80%;
+      line-height: 30px;
+      text-justify: inter-word;
+      text-indent: 1em;
+      letter-spacing: 1px;
+
+
+
+
+    }
+
+  }
+
+  .rating {
+    color: gold;
+    text-align: center;
+
+    i {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+}
+ */
 /* ----------------------INICIO SECCIONES---------------------------------------------- */
 /* CONTACTO*/
 /*  */
@@ -626,16 +714,13 @@ body.fondoImagen .foto img:hover {
   width: 100%;
   height: auto;
   background-color: #f3f2e0;
-  padding: 20px;
+  padding: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-gap: 20px;
   transition: box-shadow 0.1s ease-in-out;
-}
-
-.galeria :hover {
-  border-radius: 20px;
+  margin: 0 auto;
 }
 
 /*-------------- FOOTER index y  todas las secciones-------- */
@@ -737,15 +822,6 @@ footer h3 {
     color: #ffb155;
   }
 }
-/* -------------MEDIA QUERY CONTACTO------------ */
-@media (min-width: 300px) and (max-width: 576px) {
-  .nleftForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-  }
-}
 /* -------------MEDIA QUERY FOOTER------------ */
 @media (min-width: 300px) and (max-width: 576px) {
   .footer h3 {
@@ -776,25 +852,6 @@ footer h3 {
   opacity: 1;
 }
 
-/* /* FAQ Section */
-/* .faq-section {
-  max-width: 800px;
-  max-height: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-}
-
-.accordion-button {
-  background-color: #f8f9fa;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.accordion-body {
-  font-size: 0.9rem;
-  text-align: left;
-} */
 /* Stili Footer */
 .footer {
   width: 100%;
