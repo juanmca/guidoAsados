@@ -282,11 +282,33 @@ a .linea {
   text-align: center;
   background-size: cover;
 }
+.quienesSomos span {
+  font-family: "Calistoga", serif;
+  font-size: 50px;
+  color: #800000;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-variation-settings: "wght" 500;
+  line-height: 1.5;
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .quienesSomos span {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: 100%;
+  }
+}
 .quienesSomos p {
   margin-bottom: 20px;
   line-height: 30px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   color: black;
   font-style: italic;
@@ -300,7 +322,7 @@ a .linea {
 }
 .quienesSomos p::first-letter {
   font-size: 160%;
-  color: black;
+  color: rgb(156, 5, 5);
   font-weight: bold;
 }
 @media (min-width: 150px) and (max-width: 600px) {

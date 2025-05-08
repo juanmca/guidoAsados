@@ -218,13 +218,34 @@ ul a {
   text-align: center;
   background-size: cover;
   
-
+ span {
+    font-family: $font4;
+    font-size: 50px;
+    color: $color1;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-variation-settings: "wght" 500;
+    line-height: 1.5;
+    
+    
+    @media (min-width: 150px) and (max-width: 600px) {
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      position: relative;
+      top: 100%;
+    }
+ }
 
   p {
     margin-bottom: 20px;
     line-height: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px;
     color: $color3;
     font-style: italic;
@@ -241,7 +262,7 @@ ul a {
 
   p::first-letter {
     font-size: 160%;
-    color: black;
+    color: rgb(156, 5, 5);
     font-weight: bold;
 
   }
